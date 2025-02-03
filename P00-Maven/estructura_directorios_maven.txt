@@ -1,0 +1,35 @@
+La estructra de los directorios en proyectos Maven es la siguiente 
+-Código fuente en /src/main/java/
+-Código de pruebas /src/test/java/
+-Build Script /pom.xml
+
+Proyecto 1
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── paquete1
+    │   │       ├── Matricula.java
+    │   │       └── Triangulo.java
+    │   └── resources
+    └── test
+        └── java
+            └── paquete1
+                ├── MatriculaTest.java
+                └── TrianguloTest.java
+
+Proyecto 2
+├── pom.xml
+└── src
+    ├── main
+    │   ├── java
+    │   │   └── paquete2
+    │   │       ├── Matricula.java
+    │   │       └── Triangulo.java
+    │   └── resources
+    └── test
+        └── java
+            └── paquete2
+                ├── MatriculaTest.java
+                └── TrianguloTest.java
+

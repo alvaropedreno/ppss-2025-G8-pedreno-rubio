@@ -1,0 +1,16 @@
+--------------------
+1. mvn compile
+    - Compila el proyecto mostrando información al respecto.
+    - Finaliza con "BUILD SUCCESS" si no hay errores.
+
+2. mvn clean
+    - Elimina el directorio target/ y todos los archivos generados.
+
+3. mvn test
+    - Ejecuta las pruebas unitarias.
+    - Finaliza con "BUILD SUCCESS" si no hay errores.
+    - Genera reportes en target/surefire-reports/.
+--------------------
+1. Errores con mvn test en Proyecto 2
+    - No existen errores de compilación al menos que se borren los ; de la línea 6 y 10 como dicta el enunciado.
+    - Finaliza con "FAILED" debido a errores en los test.
