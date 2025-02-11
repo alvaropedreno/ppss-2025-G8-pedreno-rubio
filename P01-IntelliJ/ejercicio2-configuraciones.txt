@@ -1,0 +1,9 @@
+1. SimpleProject_CompileAll: mvn clean compile
+Este comando ejecuta la fase clean para eliminar resultados de construcciones previas y luego ejecuta la fase compile para compilar el proyecto y los tests.
+
+2. SimpleProject_Run_tests: mvn clean test
+Este comando ejecuta la fase clean para eliminar cualquier construcción previa y luego ejecuta la fase test para ejecutar los tests del proyecto.
+
+3. SimpleProject_Compile_only_tests: mvn clean test-compile
+Este comando ejecuta la fase clean para eliminar cualquier construcción previa y luego ejecuta test-compile para compilar únicamente el código relacionado con los tests.
+

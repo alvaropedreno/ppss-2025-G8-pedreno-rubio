@@ -1,0 +1,11 @@
+Fase 'package':
+
+- Goal ejecutado: 'package' (de maven-jar-plugin o maven-war-plugin).
+- Qué hace: Empaqueta el código y los recursos en un archivo .jar o .war.
+- Dónde se genera: En el directorio 'target/' del proyecto.
+
+Fase 'install':
+
+- Goal ejecutado: 'install' (de maven-install-plugin).
+- Qué hace: Copia el artefacto generado en el repositorio local de Maven.
+- Dónde se copia: En el directorio de repositorio local 

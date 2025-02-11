@@ -1,0 +1,21 @@
+1) Comportamientos de S, P y T
+	๏ Indica tres comportamientos que pertenezcan al conjunto S
+		(29, 2, 2020) → true
+		(31, 4, 2021) → false
+		(29, 2, 1900) → false
+	๏ Indica dos comportamientos que pertenezcan al conjunto P
+		(29, 2, 2020) → true
+		(31, 4, 2021) → false
+	๏ Enumera el conjunto de comportamientos del conjunto T
+		(29, 2, 2020) → true
+		
+2) Indica qué dos subprocesos forman la automatización de las pruebas
+	๏ Ejecución de los tests (Testing Execution)
+	๏ Generación del informe de pruebas (Test Reporting)
+
+3) ¿Hemos realizado la automatización de las pruebas?
+	๏ Sí, hemos definido un test automatizado con JUnit, que Maven ejecuta al compilar el proyecto con mvn test.
+	
+	Resultados:
+		๏ Ejecución de tests: Se ejecuta EjemploTest y pasa si el código es correcto.
+		๏ Generación de informe: Maven mostrará BUILD SUCCESS si el test es correcto o BUILD FAILURE si hay errores.
