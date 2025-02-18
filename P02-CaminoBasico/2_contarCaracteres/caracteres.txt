@@ -1,0 +1,20 @@
+1. Se espera que el método cuente correctamente el número de caracteres en el archivo y devuelva este valor como salida.
+2. Se espera que el método lance una excepción de tipo FicheroException con un mensaje que indique un problema al intentar leer el 	archivo, como "Error al leer el archivo".
+3.  Se espera que el método lance una excepción de tipo FicheroException con un mensaje que indique que el archivo no existe en el directorio especificado, como "No existe el archivo o el directorio".
+4. Se espera que el método lance una excepción de tipo FicheroException con un mensaje que indique un problema al intentar cerrar el archivo después de la lectura, como "Error al cerrar el archivo".
+
+
+	| Entrada 						 	 | Salida                                 	
+	|------------------------------------|-----------------------------------------------------------------|
+1.	| Fichero existente, lectura exitosa | Número de caracteres en el fichero.             				   |
+2.	| Fichero existente, error en lectura| FicheroException con mensaje de error "Error al leer el archivo"|
+3.	| Fichero inexistente			 	 | FicheroException con mensaje de error "No existe el archivo o el 		directorio"	   				   |
+4.	| Fichero existente, error al cerrar | FicheroException con mensaje de error "Error al cerrar el archivo|
+
+
+CC: 6
+
+Caminos independientes:
+1: 1-2-3-4-7-8-10-11
+2: 1-2-3-6-7-8-9-11
+1: 1-2-5-7-11

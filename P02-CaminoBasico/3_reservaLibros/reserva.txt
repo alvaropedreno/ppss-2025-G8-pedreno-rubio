@@ -1,0 +1,21 @@
+1. El bibliotecario tiene permisos para realizar la reserva y todos los ISBN son válidos.
+2. El bibliotecario no tiene permisos para realizar la reserva.
+3. Al menos uno de los ISBN proporcionados no es válido.
+4. El identificador del socio no es válido.
+5. No se puede acceder a la base de datos.
+
+
+	| Entrada 						 | Salida                                 	
+	|--------------------------------|-------------------------------------------------|
+1.	| Datos validas 				 | Ninguna excepción debe ser lanzada.             |
+2.	| Datos invalidos                | ReservaException con mensaje "ERROR de permisos"|
+3.	| Datos validos menos ISBN		 | ReservaException con mensaje "ISBN invalido	   |
+4.	| Datos validos menos socio		 | ReservaException con mensaje "SOCIO invalido".  |
+5.	| Error conexion DB				 | ReservaException con mensaje "CONEXION invalida"|
+
+CC: 8
+
+Caminos independientes:
+1: 1-2-3-4-6-7-9-12
+2: 1-2-3-4-6-7-8-9-10-11-12
+3: 1-2-3-4-5-9-10-11-12

@@ -1,0 +1,21 @@
+1. Todos los asientos están libres y N es un número válido.
+2. No todos los asientos están ocupados y N es un número válido.
+3. Todos los asientos estan ocupados y no se reserva ninguno.
+4. Todos los asientos ocupados y N es válido.
+5. N es inválido.
+6. N es mas grande que el número de asientos.
+
+	| Entrada 											 | Salida                                 	
+	|----------------------------------------------------|-------------------------------------------------|
+1.	| Asientos libres, N asientos válidos				 | true								               |
+2.	| Asientos parcialmente ocupados, N asientos válidos | true											   |
+3.	| Asientos totalmente ocupados, N=0			 		 | false										   |
+4.	| Asientos totalmente ocupados, N>0		 			 | false										   |
+5.	| N<0				 								 | ButacasException								   |
+6.	| N>largo				 							 | ButacasException								   |
+
+CC: 6
+
+Caminos independientes:
+1. 1-2-3-4-5-7-6-8-9-10-11
+2. 1-2-3-8-11
