@@ -1,7 +1,10 @@
 package ppss;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -58,6 +61,26 @@ class CineTest {
                 () -> assertFalse(resultado, "El método debería devolver false"),
                 () -> assertArrayEquals(new boolean[]{true, true, true}, asientos, "El array de asientos no debería cambiar: ")
         );
+    }
+
+    @Tag("parametrizado")
+    @ParameterizedTest(name = "reservaButacas_[{index}] should be {1} when we want {0} and {2}")
+    @CsvSource({
+            "0, false, 'fila has no seats'",
+            "2, true, 'there are 2 free seats'",
+            "1, false, 'all seats are already reserved'"
+    })
+    @DisplayName("reservaButacas_")
+    public void C5_reservaButacas(int numSeats, boolean expectedResult, String description) {
+        Cine cine = new Cine();
+        boolean[] asientos = {false, false, true, true, false, false};  // Asientos simulados
+
+        try {
+            boolean result = cine.reservaButacas(asientos, numSeats);
+            assertEquals(expectedResult, result, description);
+        } catch (ButacasException e) {
+            fail("Se lanzó una excepción inesperada: " + e.getMessage());
+        }
     }
 
 }

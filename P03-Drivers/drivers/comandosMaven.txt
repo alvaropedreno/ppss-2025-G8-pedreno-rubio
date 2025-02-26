@@ -1,0 +1,17 @@
+# Ejecutar los tests de la clase DataArrayTest que no estén parametrizados
+mvn test -Dtest=DataArrayTest -Dgroups="!(parametrizado)"
+
+# Ejecutar los tests de la clase FicheroTextoTest que no estén excluidos
+mvn test -Dtest=FicheroTextoTest -Dgroups="!(excluidos)"
+
+# Ejecutar todos los tests parametrizados del proyecto
+mvn test -Dgroups="parametrizado"
+
+# Ejecutar todos los tests parametrizados cuyo resultado esperado es que se lance una excepción
+mvn test -Dgroups="conExcepciones"
+
+# Ejecutar los tests de la clase CineTest que no estén parametrizados y generar un informe HTML
+mvn test -Dtest=CineTest -Dgroups="!(parametrizado)" -Djunit.jupiter.execution.report.enabled=true
+
+# Ejecutar todos los tests del proyecto excepto los parametrizados y excluidos, generando un informe HTML
+mvn test -Dgroups="!(parametrizado | excluidos)" -Djunit.jupiter.execution.report.enabled=true
