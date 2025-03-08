@@ -32,7 +32,7 @@ class GestorLlamadasTest {
     }
 
     @Test
-    void C1_should_return_207_when_hour_21_and_min_10(){
+    void C2_should_return_207_when_hour_21_and_min_10(){
         int minutos = 10;
         int hora = 21;
         double resultadoEsperado = 122;
