@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="premio" />
+        <module name="fichero" />
+        <module name="notify" />
       </profile>
     </annotationProcessing>
   </component>

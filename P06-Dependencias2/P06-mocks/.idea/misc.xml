@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/premio/pom.xml" />
+        <option value="$PROJECT_DIR$/fichero/pom.xml" />
+        <option value="$PROJECT_DIR$/notify/pom.xml" />
       </list>
     </option>
   </component>
