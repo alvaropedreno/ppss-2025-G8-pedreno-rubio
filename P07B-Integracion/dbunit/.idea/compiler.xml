@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="matriculacion-comun" />
+        <module name="matriculacion-dao" />
         <module name="dbunitexample" />
+        <module name="matriculacion-bo" />
+        <module name="matriculacion-proxy" />
       </profile>
     </annotationProcessing>
   </component>
