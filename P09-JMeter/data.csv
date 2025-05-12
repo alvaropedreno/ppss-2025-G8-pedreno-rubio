@@ -1,0 +1,17 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1747067082184,5,HTTP Request Home,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /Welcome to JPetStore 6/,1699,116,1,1,http://localhost:8080/,5,0,2
+1747067083780,12,Main Catalog,200,OK,Thread Group 1-1,text,true,,5747,431,1,1,http://localhost:8080/jpetstore/actions/Catalog.action,12,0,0
+1747067087381,13,Sign In,200,OK,Thread Group 1-1,text,true,,3923,511,1,1,http://localhost:8080/jpetstore/actions/Account.action?signonForm=,13,0,0
+1747067088980,12,Reptiles,200,OK,Thread Group 1-1,text,true,,3506,250,1,1,http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=REPTILES,12,0,0
+1747067090518,12,Dogs,200,OK,Thread Group 1-1,text,true,,4090,246,1,1,http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=DOGS,12,0,0
+1747067092125,10,Birds,200,OK,Thread Group 1-1,text,true,,3504,247,1,1,http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=BIRDS,10,0,0
+1747067093697,18,Sign Out,200,OK,Thread Group 1-1,text,true,,5253,1007,1,1,http://localhost:8080/jpetstore/actions/Catalog.action,6,0,0
+1747067093697,6,Sign Out-0,302,Found,Thread Group 1-1,,true,,332,508,1,1,http://localhost:8080/jpetstore/actions/Account.action?signoff=,6,0,0
+1747067093704,11,Sign Out-1,200,OK,Thread Group 1-1,text,true,,4921,499,1,1,http://localhost:8080/jpetstore/actions/Catalog.action,11,0,0
+1747067147553,4,HTTP Request Home,200,OK,Thread Group 1-1,text,false,Test failed: text expected to contain /Welcome to JPetStore 6/,1699,116,1,1,http://localhost:8080/,4,0,1
+1747067149089,11,Main Catalog,200,OK,Thread Group 1-1,text,true,,5747,431,1,1,http://localhost:8080/jpetstore/actions/Catalog.action,11,0,0
+1747067152683,8,Sign In,200,OK,Thread Group 1-1,text,true,,3923,511,1,1,http://localhost:8080/jpetstore/actions/Account.action?signonForm=,8,0,0
+1747067154275,10,Reptiles,200,OK,Thread Group 1-1,text,true,,3506,250,1,1,http://localhost:8080/jpetstore/actions/Catalog.action?viewCategory=&categoryId=REPTILES,10,0,0
+1747067155837,17,Sign Out,200,OK,Thread Group 1-1,text,true,,5253,1007,1,1,http://localhost:8080/jpetstore/actions/Catalog.action,6,0,0
+1747067155837,6,Sign Out-0,302,Found,Thread Group 1-1,,true,,332,508,1,1,http://localhost:8080/jpetstore/actions/Account.action?signoff=,6,0,0
+1747067155844,10,Sign Out-1,200,OK,Thread Group 1-1,text,true,,4921,499,1,1,http://localhost:8080/jpetstore/actions/Catalog.action,10,0,0
