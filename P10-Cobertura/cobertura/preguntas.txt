@@ -1,0 +1,41 @@
+D)
+• ¿Cual es el número de instrucciones bytecode ejecutadas para la clase Sample?
+84
+• ¿Cuántas instrucciones bytecode nos faltan para tener una cobertura del 100% de instrucciones
+bytecode para la clase Sample?
+117 - 84 = 33
+• ¿Cuántas instrucciones bytecode tiene la clase Sample?
+117
+En el informe verás el método Sample(), sin embargo no lo hemos implementado en el código
+que se os ha proporcionado. ¿Por qué aparece entonces en el informe?
+Por que es el constructor por defecto
+• El método Sample() tiene una cobertura de branches con valor "n/a". ("n/a" signi ica "not
+applicable"). Razona por qué tiene dicho valor.
+Porque es un constructor que no tiene lógica
+• Indica cuál es el valor de complejidad ciclomática para el método Sample.maxValue() y
+justi ica, teniendo en cuenta el código del método y la fórmula que usa JaCoCo, por qué tiene
+ese valor, (debes indicar qué líneas de código se asocian a los valores calculados por la fórmula
+de JaCoCo.
+CC = 4. Formula Jacoco CC = B - DP + 1
+• Indica qué representa el valor de Cxty para Sample.maxValue(), y razona si según ese valor
+estamos siendo e icientes y efectivos (no debes tener en cuenta que Cxty es una cota máxima).
+Si, una CC es baja
+• Observa cuáles son los valores de cobertura para Sample.isValid(). Teniendo en cuenta que el
+código de maxValue() contiene la sentencia"if (isValid(data))" razona por qué en el informe de
+cobertura no se recorre esa línea.
+Porque isValid siempre devuelve true, por eso deja al bloque sin ejecutar
+
+E) Viendo el informe, ¿cuántos tests como
+   máximo te harán falta para eso?
+   Me haran falta 9 tests
+
+// Ejercicio 2
+• Justi ica el valor de cobertura de branches para la clase ppss.ejercicio2.MyClass.
+No tiene, ya que ningun punto de la clase genera puntos de decisión
+• Explica por qué el valor de cobertura de branches para la clase ppss.ejercicio2.Lock es del 100%,
+a pesar de que no todos sus métodos tienen también el valor 100%.
+Porque todos los métodos de la clase Lock tienen un return, por lo que no hay ningún branch
+• Observa también que para la clase ppss.ejercicio2.Lock la cobertura de líneas es del 72,7%
+mientras que la cobertura de branches es del 100% ¿cómo es eso posible?
+Porque es posible cubrir todas las ramas sin cubrir todas las lineas, ya que hay lineas que no son puntos decisivos
+
