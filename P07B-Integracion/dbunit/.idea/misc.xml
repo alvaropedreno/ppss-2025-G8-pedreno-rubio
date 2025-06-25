@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/dbunitexample/pom.xml" />
         <option value="$PROJECT_DIR$/../../P07A-Multimodulo/multimodulos/matriculacion/pom.xml" />
+        <option value="$PROJECT_DIR$/matriculacion/pom.xml" />
       </list>
     </option>
   </component>
